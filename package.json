@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^9.8.0",
+    "three": "^0.154.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.2"
+  }
+}

@@ -13,59 +13,553 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <!--Page de couverture-->
-            <section data-id="PAGE DE GARDE">
-                <div data-id=" container"
-                    style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
-                    <div data-id="box-image"
-                        style="width: 750px; height: 100%; background-image: url('./assets/tao-building-1.JPG'); background-position: center; background-repeat: no-repeat; background-size: cover; margin-right: 25px; filter: brightness(1);">
+            <!-----------------------PAGE DE COUVERTURE----------------------->
+
+            <section data-id="PAGE DE GARDE" id="PAGE DE GARDE">
+                <section>
+                    <div data-id="container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-image"
+                            style="width: 750px; height: 100%; margin-right: 25px; overflow: hidden;">
+                            <video src="./assets/videos/video-neptune.mp4" autoplay loop
+                                style="position: absolute; left: 0; width: 500px;height: 100%; top: -1.9rem; z-index:3;"></video>
+                            <div
+                                style="backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: absolute; left: 0; width: 500px;height: 120px; bottom: 0; z-index: 1;">
+                            </div>
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: relative; left: 16rem; bottom: -49rem; opacity: .05; z-index: 2;">
+                        </div>
+                        <div data-id="box-contents"
+                            style="height: 100%; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 125px; overflow: hidden; z-index: -1;">
+                            <div data-id="separator"
+                                style="width: 100px; height: 4px; background: aliceblue; position: relative; bottom: 100px;">
+                            </div>
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; font-size: 96px; letter-spacing: -2px; text-align: start; color: aliceblue;">
+                                Soutenance de
+                                stage <br> Mon parcours chez <span style="color: #43BBFF;">Allianz</span></h2>
+                            <p data-id="description"
+                                style="font-family: 'Montserrat', sans-serif; text-align: start; font-size: 28px; position: relative; bottom: 20px;">
+                                Découvrez mon
+                                parcours en tant que développeur front-end chez Allianz : réalisations, défis,
+                                compétences
+                                acquises etc...</p>
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 12.75rem; top: 5rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/designs/my-name-blue.svg" data-id="myName"
+                                style="position: absolute; right: 2rem; bottom: 0rem; animation: rotate 20s linear infinite;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <div data-id="bullets" style="display: flex; position: relative; top: 150px;">
+                                <div
+                                    style="width: 15px; height: 15px; border-radius: 50%; background: aliceblue; margin-right: 20px;">
+                                </div>
+                                <div
+                                    style="width: 15px; height: 15px; border-radius: 50%; background: aliceblue; margin-right: 20px;">
+                                </div>
+                                <div
+                                    style="width: 15px; height: 15px; border-radius: 50%; background: aliceblue; margin-right: 20px;">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div data-id="box-contents"
-                        style="height: 100%; width: 100%; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 125px; overflow: hidden; z-index: -1;">
-                        <img src="./assets/elipse.svg" data-id="elipse3"
-                            style="position: absolute; right: 12.75rem; top: 5rem; opacity: .05;">
-                        <img src="./assets/elipse.svg" data-id="elipse2"
-                            style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
-                        <img src="./assets/my-name-blue.svg" data-id="myName"
-                            style="position: absolute; right: 2rem; bottom: 0rem; animation: rotate 20s linear infinite;">
-                        <img src="./assets/logo-intech.png" data-id="logo-intech"
-                            style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
-                        <div data-id="separator"
-                            style="width: 100px; height: 4px; background: aliceblue; position: relative; bottom: 100px;">
-                        </div>
-                        <h2 data-id="title"
-                            style="font-family: 'League', sans-serif; font-size: 96px; letter-spacing: -2px; text-align: start; color: aliceblue;">
-                            Soutenance de
-                            stage <br> Mon parcours chez <span style="color: #43BBFF;">Allianz</span></h2>
-                        <p data-id="description"
-                            style="font-family: 'Montserrat', sans-serif; text-align: start; font-size: 28px; position: relative; bottom: 20px;">
-                            Découvrez mon
-                            parcours en tant que développeur front-end chez Allianz : réalisations, défis,
-                            compétences
-                            acquises etc...</p>
-                        <div data-id="bullets" style="display: flex; position: relative; top: 150px;">
-                            <div
-                                style="width: 15px; height: 15px; border-radius: 50%; background: aliceblue; margin-right: 20px;">
-                            </div>
-                            <div
-                                style="width: 15px; height: 15px; border-radius: 50%; background: aliceblue; margin-right: 20px;">
-                            </div>
-                            <div
-                                style="width: 15px; height: 15px; border-radius: 50%; background: aliceblue; margin-right: 20px;">
-                            </div>
-                        </div>
-                        <div data-id="box-contents-image"
-                            style="width: 100%; height: 1000px; background-image: url('./assets/building.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; filter: brightness(0.7); position: absolute; left: 0; z-index: -1;">
-                        </div>
-                        <div data-id="box-filter"
-                            style="width: 100%; height: 1000px; background: #0000002b; backdrop-filter: blur(25px) brightness(0.7); position: absolute; left: 0; z-index: -1;">
-                        </div>
-                    </div>
-                </div>
+                </section>
             </section>
-            <!-----------------------Page du sommaire--------------------------------------->
-            <section id="sommaire-pages">
-                <section id="sommaire-1"></section>
+
+            <!-----------------------PAGE SOMMAIRE----------------------->
+
+            <section data-auto-animate data-id="SOMMAIRE01" id="SOMMAIRE">
+                <!-----------------------PAGE DU SOMMAIRE-COMPLET----------------------->
+
+                <section data-auto-animate>
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                SOMMAIRE <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                            <div data-id="shapes" class="shapes"
+                                style="position: relative; display: flex; justify-content: space-between; transition: none !important; transform: translateY(0px) scale(1)">
+                                <div data-id="shapeOne" class="shapeOne shape" style="position: relative; top: -5rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -10px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">01</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">Présentation de l'entreprise
+                                    </h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: none;">
+                                            <img src="./assets/icons/building-solid.svg" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"
+                                            data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                                <div data-id="shapeTwo" class="shapeTwo shape"
+                                    style="position: relative; top: 10rem; left: 1rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -10px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">02</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">Analyse des missions
+                                        effectuées</h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: none;">
+                                            <img src="./assets/icons/checklist.png" style="width: 28px;" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                                <div data-id="shapeTree" class="shapeTree shape"
+                                    style="position: relative; top: -5rem; left: 2rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -10px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">03</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">Collaboration et travail
+                                        d'équipe</h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: none;">
+                                            <img src="./assets/icons/teams.svg"
+                                                style="width: 32px; transform: translateY(2px);" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                                <div data-id="shapeFour" class="shapeFour shape"
+                                    style="position: relative; top: 10rem; left: 3rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -2px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">04</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">Défis et réussites</h3>
+                                    <div class="layout-arrow layout-arrow-shapeFour">
+                                        <div class="arrow-pulse" style="animation: none;">
+                                            <img src="./assets/icons/target.png"
+                                                style="width:42px; transform: translateY(-4px);" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                                <div data-id="shapeFive" class="shapeFive shape"
+                                    style="position: relative; top: -5rem; left: 4rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -10px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">05</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">Développement personnel</h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: none;">
+                                            <img src="./assets/icons/book.svg" style="width: 28;" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-----------------------PAGE DU SOMMAIRE-01----------------------->
+
+                <section data-auto-animate id="SOMMAIRE-2-1">
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                SOMMAIRE <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                            <div data-id="shapes" class="shapes"
+                                style="position: relative; display: flex; justify-content: space-between; transition: none !important; transform: translateY(0px) scale(1)">
+                                <div data-id="shapeOne" class="shapeOne shape" style="position: relative; top: -5rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -10px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">01</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">Présentation de l'entreprise
+                                    </h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: pulseAnimation 2s ease infinite;">
+                                            <img src="./assets/icons/building-solid.svg" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"
+                                            data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="building-allianz" style="position: absolute;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-----------------------PAGE DU SOMMAIRE-02----------------------->
+
+                <section data-auto-animate data-id="SOMMAIRE-2-2" id="SOMMAIRE-2-2">
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                SOMMAIRE <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                            <div data-id="shapes" class="shapes"
+                                style="position: relative; display: flex; justify-content: space-between; transition: none !important; transform: translateY(0px) scale(1)">
+                                <div data-id="shapeOne" class="shapeOne shape" style="position: relative; top: -5rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -10px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">02</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">ANALYSE DES MISSIONS
+                                        EFFECTUÉES
+                                    </h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: pulseAnimation 2s ease infinite;">
+                                            <img src="./assets/icons/checklist.png" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"
+                                            data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- <div id="checklist" style="position: absolute;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;"></div> -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-----------------------PAGE DU SOMMAIRE-03----------------------->
+
+                <section data-auto-animate data-id="SOMMAIRE-2-3" id="SOMMAIRE-2-3">
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                SOMMAIRE <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                            <div data-id="shapes" class="shapes"
+                                style="position: relative; display: flex; justify-content: space-between; transition: none !important; transform: translateY(0px) scale(1)">
+                                <div data-id="shapeOne" class="shapeOne shape" style="position: relative; top: -5rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -10px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">03</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">COLLABORATION ET TRAVAIL D'ÉQUIPE
+                                    </h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: pulseAnimation 2s ease infinite;">
+                                            <img src="./assets/icons/checklist.png" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"
+                                            data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- <div id="checklist" style="position: absolute;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;"></div> -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-----------------------PAGE DU SOMMAIRE-04----------------------->
+
+                <section data-auto-animate data-id="SOMMAIRE-2-4" id="SOMMAIRE-2-4">
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                SOMMAIRE <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                            <div data-id="shapes" class="shapes"
+                                style="position: relative; display: flex; justify-content: space-between; transition: none !important; transform: translateY(0px) scale(1)">
+                                <div data-id="shapeOne" class="shapeOne shape" style="position: relative; top: -5rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -2px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">04</span>
+                                    <h3 data-id="title-shape-sommaire" 
+                                        style="font-family: 'League-regular', sans-serif;">DÉFIS ET RÉUSSITES
+                                    </h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: pulseAnimation 2s ease infinite;">
+                                            <img src="./assets/icons/target.png"
+                                                style="width:42px; transform: translateY(-4px);" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"
+                                            data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- <div id="checklist" style="position: absolute;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;"></div> -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-----------------------PAGE DU SOMMAIRE-05----------------------->
+
+                <section data-auto-animate data-id="SOMMAIRE-2-5" id="SOMMAIRE-2-5">
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                SOMMAIRE <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                            <div data-id="shapes" class="shapes"
+                                style="position: relative; display: flex; justify-content: space-between; transition: none !important; transform: translateY(0px) scale(1)">
+                                <div data-id="shapeOne" class="shapeOne shape" style="position: relative; top: -5rem;">
+                                    <span
+                                        style="font-size: 164px; letter-spacing: -10px; color: #43BBFF; font-weight: bold;"
+                                        data-id="number-shape-sommaire">05</span>
+                                    <h3 data-id="title-shape-sommaire"
+                                        style="font-family: 'League-regular', sans-serif;">DÉVELOPPEMENT PERSONNEL
+                                    </h3>
+                                    <div class="layout-arrow" data-id="layout-arrow">
+                                        <div class="arrow-pulse" style="animation: pulseAnimation 2s ease infinite;">
+                                            <img src="./assets/icons/book.svg" style="width: 28;" alt="">
+                                        </div>
+                                        <div class="arrow" data-id="arrow-shape-sommaire"
+                                            data-id="arrow-shape-sommaire"></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- <div id="checklist" style="position: absolute;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;"></div> -->
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-----------------------PAGE PRÉSENTATION DE L'ENTREPRISE----------------------->
+
+            <section data-auto-animate data-id="PRESENTATION-ENTREPRISE" id="PRESENTATION-ENTREPRISE">
+                <section data-auto-animate>
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.75rem;">
+                                PRÉSENTATION DE L'ENTREPRISE <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-----------------------PAGE MISSIONS EFFECTUÉES----------------------->
+            
+            <section data-auto-animate data-id="MISSIONS-EFFECTUÉES" id="MISSIONS-EFFECTUÉES">
+                <section data-auto-animate>
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                ANALYSE DES MISSIONS EFFECTUÉES <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-----------------------PAGE COLLABORATION ÉQUIPE----------------------->
+
+            <section data-auto-animate data-id="COLLABORATION-ÉQUIPE" id="COLLABORATION-ÉQUIPE">
+                <section data-auto-animate>
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.75rem;">
+                                COLLABORATION ET TRAVAIL D'ÉQUIPE <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-----------------------PAGE DÉFIS RÉUSSITES----------------------->
+
+            <section data-auto-animate data-id="DÉFIS-RÉUSSITES" id="DÉFIS-RÉUSSITES">
+                <section data-auto-animate>
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                DÉFIS ET RÉUSSITES <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-----------------------PAGE DÉVELOPPEMENT PERSONNEL----------------------->
+
+            <section data-auto-animate data-id="DÉVELOPPEMENT-PERSONNEL" id="DÉVELOPPEMENT-PERSONNEL">
+                <section data-auto-animate>
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.75rem;">
+                                DÉVELOPPEMENT PERSONNEL <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-----------------------CONCLUSION----------------------->
+
+            <section data-auto-animate data-id="CONCLUSION" id="CONCLUSION">
+                <section data-auto-animate>
+                    <div data-id=" container"
+                        style="height: 1000px; display: flex; justify-content: start; align-items: center; position: relative;">
+                        <div data-id="box-contents"
+                            style="height: 1000px; width: 100%; backdrop-filter: blur(12px) brightness(0.9); background: #0000001a; position: relative; display: flex; justify-content: center; align-items: start; flex-direction: column; padding-left: 150px; overflow: hidden; z-index: -1;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse3"
+                                style="position: absolute; right: 23rem; top: -16rem; opacity: .05;">
+                            <img src="./assets/designs/elipse.svg" data-id="elipse2"
+                                style="position: absolute; left: -13rem; bottom: -14rem; opacity: .05;">
+                            <img src="./assets/logo-intech.png" data-id="logo-intech"
+                                style="width: 125px; position: absolute; top: 50px; right: 50px; margin: 0;" alt="">
+                            <h2 data-id="title"
+                                style="font-family: 'League', sans-serif; letter-spacing: -2px; font-size: 82px; text-align: start; color: aliceblue; position: absolute; top: 4.5rem;">
+                                CONCLUSION <img src="./assets/icons/shape-losange.svg"
+                                    style="width:50px; transform: translateY(17px) !important;" alt=""></h2>
+                            <div data-auto-animate-delay="0.5" data-id="separator"
+                                style="width: calc(100% - 300px); height: 4px; background: aliceblue; position: absolute; top: 12rem;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </div>
     </div>
@@ -76,19 +570,42 @@
             backgroundTransition: 'slide',
             width: 1920,
             height: 1080,
-            parallaxBackgroundImage: './assets/building.jpg',
+            hashOneBasedIndex: true,
+            parallaxBackgroundImage: './assets/buildings/building.jpg',
             parallaxBackgroundSize: '3000px 2000px',
             parallaxBackgroundHorizontal: 20,
-            parallaxBackgroundVertical: 20
-        })
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(function () {
-            $("#sommaire-pages").load("./pages/pages-sommaire/sommaire-pages.html");
-            $("#sommaire-1").load("./pages/pages-sommaire/sommaire-1.html");
+            parallaxBackgroundVertical: 20,
+            autoAnimateStyles: [
+                'opacity',
+                'color',
+                'transform',
+                'background-color',
+                'font-size',
+                'letter-spacing',
+                'border-width',
+                'border-color',
+                'border-radius',
+                'outline',
+                'outline-offset'
+            ],
+        }).then(() => {
+            var indices = Reveal.getIndices(document.getElementById('PRESENTATION-ENTREPRISE'));
+            Reveal.slide(indices.h, indices.v);
+            Reveal.configure({
+                keyboard: {
+                    27: () => { console.log('esc') }, // do something custom when ESC is pressed
+                    13: 'next', // go to the next slide when the ENTER key is pressed
+                    32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+                }
+            });
+            Reveal.addEventListener('slidechanged', function (event) {
+                var currentSlide = event.currentSlide;
+                var slideId = currentSlide.getAttribute('data-id');
+            });
         });
     </script>
+    <script type="module" src="./3d-files/building-allianz.js"></script>
+    <script type="module" src="./3d-files/building-allianz.js"></script>
 </body>
 
 </html>
