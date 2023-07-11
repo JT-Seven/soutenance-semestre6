@@ -112,6 +112,16 @@ p {
     filter: none;
 }
 
+.fragment.blur-partnership {
+    filter: blur(10px);
+    transition: all .8s ease-in;
+}
+
+.fragment.blur-partnership.visible {
+    transition: all .8s ease-in;
+    filter: none;
+}
+
 
 /* ANIMATIONS */
 

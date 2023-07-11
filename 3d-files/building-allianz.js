@@ -27,7 +27,7 @@ loader.load( './assets/3d-models/building-allianz.glb', function ( gltf ) {
 
 camera.position.z = 4.7;
 camera.position.x = -1;
-camera.far = 1000000; // Ajustez cette valeur pour définir une distance de rendu plus éloignée
+camera.far = 1000000;
 camera.updateProjectionMatrix();
 
 
