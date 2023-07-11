@@ -29,7 +29,7 @@ canvas {
 }
 
 h3 {
-    font-size: 24px !important;
+    font-size: 28px !important;
     color: aliceblue !important;
     letter-spacing: 1.2px !important;
 }
@@ -100,25 +100,29 @@ p {
     top: 23rem;
 }
 
+/* COLLABORATION EQUIPE */
+
+
+
 /* FGRAGMENTS */
 
 .fragment.blur {
     filter: blur(20px);
-    transition: all .8s ease-in;
+    transition: all .5s ease-in;
 }
 
 .fragment.blur.visible {
-    transition: all .8s ease-in;
+    transition: all .5s ease-in;
     filter: none;
 }
 
 .fragment.blur-partnership {
     filter: blur(10px);
-    transition: all .8s ease-in;
+    transition: all .5s ease-in;
 }
 
 .fragment.blur-partnership.visible {
-    transition: all .8s ease-in;
+    transition: all .5s ease-in;
     filter: none;
 }
 
