@@ -34,6 +34,10 @@ h3 {
     letter-spacing: 1.2px !important;
 }
 
+p {
+    color: #a9a9aa;
+}
+
 /* SOMMAIRE */
 
 .shape {
@@ -84,6 +88,29 @@ h3 {
     object-fit: cover;
 }
 
+/* PRESENTATION ENTREPRISE */
+
+.container-company-key, .container-company-history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    width: 1126px;
+    position: absolute;
+    left: 0;
+    top: 23rem;
+}
+
+/* FGRAGMENTS */
+
+.fragment.blur {
+    filter: blur(20px);
+    transition: all .8s ease-in;
+}
+
+.fragment.blur.visible {
+    transition: all .8s ease-in;
+    filter: none;
+}
 
 
 /* ANIMATIONS */
