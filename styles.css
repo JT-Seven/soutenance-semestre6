@@ -38,6 +38,124 @@ p {
     color: #a9a9aa;
 }
 
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 800px;
+    
+    height: 400px;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-background.active {
+    opacity: 1;
+    visibility: visible;
+    
+    transition-delay: 0s;
+}
+
+.modal-content.active {
+    opacity: 1;
+    transform: scale(1);
+    padding: 50px;
+}
+
+.modal-logo {
+    width: 250px;
+    height: max-content;
+    margin-right: 5rem;
+}
+
+.modal-description {
+    margin-top: 10px;
+    text-align: start;
+    font-size: 25px;
+    line-height: 48px;
+    color: #43BBFF;
+}
+
+.modal-background-mail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+.modal-content-mail {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 800px;
+    
+    height: 400px;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-background-mail.active {
+    opacity: 1;
+    visibility: visible;
+    
+    transition-delay: 0s;
+}
+
+.modal-content-mail.active {
+    opacity: 1;
+    transform: scale(1);
+    padding: 50px;
+}
+
+.modal-logo-mail {
+    width: 250px;
+    height: max-content;
+    margin-right: 5rem;
+}
+
+.modal-description-mail {
+    margin-top: 10px;
+    text-align: start;
+    font-size: 25px;
+    line-height: 48px;
+    color: #43BBFF;
+}
+
 /* SOMMAIRE */
 
 .shape {
