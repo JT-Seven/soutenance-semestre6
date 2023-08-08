@@ -4,3 +4,8 @@
 
    ```sh
    npm install
+
+2. Suivi de la commande "npx vite" pour lancer le projet :
+
+   ```sh
+   npx vite
